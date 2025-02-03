@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Links</title>
+    <title>Uniform Buttons Example</title>
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -17,92 +17,43 @@
 
         .button-container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
 
-        .button-item {
-            margin: 10px 0;
-        }
-
-        .button-item button {
-            background-color: #6c6c6c;
-            color: #ffffff;
+        .uniform-button {
+            width: 200px;
+            height: 50px;
+            background-color: #929292;
+            color: #4c4c4c;
             border: none;
-            padding: 15px 30px;
-            font-size: 18px;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            font-size: 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .button-item button:hover {
-            background-color: #5a5a5a;
+        .uniform-button:hover {
+            background-color: #b0b0b0;
         }
     </style>
 </head>
 <body>
     <div class="button-container">
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/30day30works2025/'">1. 30day30works2025</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/Whitechapel-gallery/'">2. Whitechapel Gallery</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/30day30works2023/'">3. 30day30works2023</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/Alex/'">4. Alex Grussing</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/nfc-sound-trigger-door'">5. nfc-sound-trigger-door</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/github-slideshow'">6. github-slideshow</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/30day30works2025/'">7. 30day30works2025</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/Whitechapel-gallery/'">8. Whitechapel Gallery</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/30day30works2023/'">9. 30day30works2023</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/Alex/'">10. Alex Grussing</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/nfc-sound-trigger-door'">11. nfc-sound-trigger-door</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/github-slideshow'">12. github-slideshow</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/30day30works2025/'">13. 30day30works2025</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/Whitechapel-gallery/'">14. Whitechapel Gallery</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/30day30works2023/'">15. 30day30works2023</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/Alex/'">16. Alex Grussing</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/nfc-sound-trigger-door'">17. nfc-sound-trigger-door</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/github-slideshow'">18. github-slideshow</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/30day30works2025/'">19. 30day30works2025</button>
-        </div>
-        <div class="button-item">
-            <button onclick="location.href='https://mykudah.github.io/Whitechapel-gallery/'">20. Whitechapel Gallery</button>
-        </div>
+        <a href="https://mykudah.github.io/30day30works2025/" class="uniform-button">30day30works2025</a>
+        <a href="https://mykudah.github.io/Whitechapel-gallery/" class="uniform-button">Whitechapel Gallery</a>
+        <a href="https://mykudah.github.io/30day30works2023/" class="uniform-button">30day30works2023</a>
+        <a href="https://mykudah.github.io/Alex/" class="uniform-button">Alex Grussing</a>
+        <a href="https://mykudah.github.io/nfc-sound-trigger-door" class="uniform-button">nfc-sound-trigger-door</a>
+        <a href="https://mykudah.github.io/github-slideshow" class="uniform-button">github-slideshow</a>
+        <a href="https://mykudah.github.io/30day30works2025/" class="uniform-button">30day30works2025</a>
+        <!-- Add more buttons as needed -->
     </div>
 </body>
 </html>
